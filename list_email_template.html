@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <base target="_top" />
+    </head>
+    <body>
+        <p>
+            Thank you for signing up for the Bone Dry Comedy Hour Open Mic. The
+            show starts at 8pm. If you can't make it please let us know. Check
+            in with the host at least 15 minutes before your spot. If you do
+            not, your spot will be given to someone on standby.
+        </p>
+        <p>
+            The maximum time for your set is listed by your name. You will get
+            the light <i>one minute</i> before your time is up.
+        </p>
+        <p><?= listEmailInfo.addlAnnouncement ?></p>
+        <p>Host: <?= listEmailInfo.host ?></p>
+        <ol>
+            <li><?!= listEmailInfo.theList.join('</li>\n</li>
+            <li>') ?></li>
+        </ol>
+
+        <p>
+            If you are on the bump list you will have a guaranteed spot
+            <b>IF you sign up next week</b>.
+        </p>
+
+        <p>Bump List:</p>
+        <ul>
+            <li><?!= listEmailInfo.bumpList.join('</li>\n</li>
+            <li>') ?></li>
+        </ul>
+    </body>
+</html>
